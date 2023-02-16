@@ -17,6 +17,7 @@ public class Basic {
         for(Weekday day:Weekday.values())
         {
             System.out.println(day);
+            System.out.println(day.ordinal()); //position of enum deceleration
         }
     }
 }

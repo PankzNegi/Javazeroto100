@@ -1,5 +1,5 @@
 package com.pankz.OOPS.Interfaces;
-
+//custom class for interface media
 public class CDplayer implements Media {
     @Override
     public void start() {

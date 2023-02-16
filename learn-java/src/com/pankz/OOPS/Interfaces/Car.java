@@ -1,5 +1,5 @@
 package com.pankz.OOPS.Interfaces;
-
+//custom class for interface car
 public class Car implements Engine,Brakes,Media //implementing interfaces
 {
 

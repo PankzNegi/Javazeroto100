@@ -5,7 +5,7 @@ public abstract class Parent {
     final int VAL;   //can declare final variable  inside abstarct class.
     static int value=67; //can declare static variable also inside abstract class
 
-    public Parent(int age) {
+    public Parent(int age) {  //constructor of abstract class but we can't call it via objects,use it via super()
         this.age = age;
         VAL=78976;
     }

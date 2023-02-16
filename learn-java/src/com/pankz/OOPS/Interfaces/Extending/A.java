@@ -6,5 +6,5 @@ public interface A {
     {
         System.out.println("static method");
     }
-    void fun();
+    void fun();  //abstract method
 }

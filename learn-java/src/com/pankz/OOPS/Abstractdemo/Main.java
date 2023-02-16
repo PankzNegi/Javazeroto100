@@ -5,9 +5,9 @@ public class Main {
         Son son =new Son(12);
         son.carrer();
         Daughter daughter=new Daughter(24);
-        //Parent daughter =new Daughter(24); //Run time polymorphism we can access via classname
+        //Parent daughter =new Daughter(24); //Run time polymorphism we can access via classname(here abstarct classname)
         daughter.carrer();
-       // Parent mom=new Parent();
+       // Parent mom=new Parent(); error
         //Therfore ae cant create object of abstract class
         // coz if we access abstract class via its object,we cant access anything as its body is empty.
         //Similarly we cant create abstract constructor(same reason as above)
