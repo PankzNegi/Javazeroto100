@@ -20,7 +20,7 @@ public class Meal {
 
     public void setBread(String bread) {
         this.bread = bread;
-    }
+    } //Builder eg4
 
     public String getColdDrink() {
         return coldDrink;
