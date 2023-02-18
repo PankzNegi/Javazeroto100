@@ -7,16 +7,17 @@ public class RobotDirector {
         this.robotBuilder = robotBuilder;
     }
 
-    public Robot getRobot() {
-        return this.robotBuilder.getRobot();
-
-
-    }
-    public void makerobot()
+//    public Robot getRobot() {
+//        return this.robotBuilder.getRobot();
+//
+//
+//    }
+    public Robot makerobot()
     {
         this.robotBuilder.buildRobotHead();
         this.robotBuilder.buildRobotArms();
         this.robotBuilder.buildRobotLegs();
         this.robotBuilder.buildRobotTorso();
+        return robotBuilder.build();
     }
 }

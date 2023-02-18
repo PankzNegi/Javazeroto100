@@ -32,10 +32,14 @@ public class OldRobotBuilder implements RobotBuilder{
         this.robot.setRobotLegs("Roller skates");
 
     }
-    public Robot getRobot()
+    public  Robot build()
     {
-        return this.robot;
+        return robot;
     }
+//    public Robot getRobot()
+//    {
+//        return this.robot;
+//    }
 
 }
 
