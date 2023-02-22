@@ -1,0 +1,20 @@
+The Object class is the parent class of all the classes in java by default.
+In other words, it is the topmost class of java.
+
+The Object class is beneficial if you want to refer any object whose type you don't know.
+Notice that parent class reference variable can refer the child class object, know as upcasting.
+
+
+Object Methods-toString(); clone(); hashCode(); etc.
+We have to override these methods
+
+When you don't need to override equals method??
+
+Some classes does not override (Service & Repositery)
+e.g Thread class does not override equals method
+Or when the class is inhertely unique.
+
+When you have to override equals method ??
+In case of data classes.
+
+Contracts for quals methods- Reflexive,symmetric & transitive
