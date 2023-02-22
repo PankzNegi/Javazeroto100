@@ -1,0 +1,12 @@
+We must override hashcode in every class that override equals/
+Otherwise it will not work properly in collection such as HashMap & HashSet.
+Contract of hashCode--
+The basic rule of the contract states that if two objects are equal to each other based on equals() method, then the hash code must be the same.
+ but if the hash code is the same, then equals() can return false.
+
+
+ General Contract for hashCode-->\
+
+The hashCode() method should return the same integer value for the same object for each calling of this method unless the value stored in the object is modified.
+If two objects are equal(according to equals() method) then the hashCode() method should return the same integer value for both the objects.
+But, it is not necessary that the hashCode() method will return the distinct result for the objects that are not equal (according to equals() method).

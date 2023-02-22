@@ -1,0 +1,8 @@
+General contract associated with equals() method-->
+For any non-null reference variables a, b and c
+
+a.equals(a) should always return true.
+a.equals(b) should return true if and only if b.equals(a) returns true.
+If a.equals(b) returns true and b.equals(c) returns true then a.equals(c) should return true.
+Multiple calling of a.equals(b) should consistently return true or consistently return false If the value of the object is not modified for either object.
+a.equals(null) should return false.
