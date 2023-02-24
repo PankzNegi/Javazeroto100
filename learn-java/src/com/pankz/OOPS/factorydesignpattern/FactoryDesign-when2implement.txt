@@ -1,0 +1,13 @@
+Factory design pattern is used when we have a superclass with multiple subclasess and
+based on input,we need to return an object of one of the subclass.
+This pattern takes out the responsibility of the instantiation of a class from the client program to the factory class
+
+
+
+
+IT IS WIDELY USED WHEN----->
+1-When the implementation of the "interface or an abstract class is exposed to change frequently".
+2-When we multiple subclasses of superclass
+
+ADVANTAGE- Code for interface rather than implementation
+Less coupled and easy to extend(exposing it from client)
