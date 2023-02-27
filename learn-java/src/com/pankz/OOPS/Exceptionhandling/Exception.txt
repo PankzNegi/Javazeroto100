@@ -1,0 +1,38 @@
+Exception-->Exceptions is the subclass of throwable class.
+We are trying to open one file and it doesn't exist  that is an exception.
+You are looking for an input and user is not giving you the input that is an exception.
+Trying to run an application but cpu is unavailable that is an exception.
+Dividing number by zero is also an exception
+Exception are those which we can handle.
+We can't handle errors
+Error---.JVM is not working,Memory unavailable e.t.c
+Exceptions are of two types one is Checked exception and other is Unchecked.
+Checked(compile time exception) means you are allowing your user to handle it.(It can be handle)
+Unchecked(Runtimexception).
+Statements are of two types-Normal and Critical.
+Critical statements comes under try block which throws an object of exception.
+Catch block will catch that object of exception.
+e.g int k=i/j; j might be zero hence it is critical statement
+try
+{
+int k=i/j;
+}
+catch
+{
+//catch exception
+}
+There can be multiple catch statement under one try block.
+Exception is the super class of all general exceptions.
+Arithematic,Arrayoutofbound,IOexception extends "Exception"
+catch(Exception e)
+{
+handle all types of exception
+}
+Checked--->If user can handle it fine but if not pass it above then above
+c throws an exception to b if b can handle it fine otherwise ,b throws an exception to a and so on....
+so you can throw an exception using "throws" clause.
+Checked--->IOException,SQLException,MalformedURLException
+Unchecked-->RuntimeException(Arrayindexoutofbound,Arithematic,NumberFormat,ClasscastException,Nullpointer e.t.c)
+ArithematicException extends RuntimeException
+RuntimeException extends Exception
+Exception extends Throwable
