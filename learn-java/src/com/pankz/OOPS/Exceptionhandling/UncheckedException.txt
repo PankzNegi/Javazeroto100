@@ -1,0 +1,23 @@
+public class UncheckedException {
+    public static void main(String[] args) {
+        String name=null;
+        printLength(name); //here compiler will not throw any error at compile time
+
+    }
+    private static void printLength(String myString)
+    {
+        System.out.println(myString.length());
+    }
+}
+But this code will explode at run time and throw nullpointerexception
+UNCHECKED--->Java doesn't makes us catch it with a try catch block and doesn't even make us
+declare it here in method signature that we might throw a nullpointerexception.
+But we can solve it via try catch block or throws clause in method signature.
+
+
+
+How java knows which exception is checked or unchecked??
+
+"RuntimeException" are unchecked exception.
+
+Which are not runtime exception are checked exception.
