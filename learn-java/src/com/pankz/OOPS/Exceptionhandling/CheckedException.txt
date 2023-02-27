@@ -1,0 +1,61 @@
+
+public class CheckedException {
+    public static void main(String[] args) {
+        readFile("myFile.txt");
+     }
+
+
+
+public static void readFile(String fileName)
+    {
+        FileReader reader=new FileReader(fileName);  So when we try to create this file reader it could throw an exception
+    }
+    Compiler indicating filenotfound exception automatically because their is no such file as myFile.txt
+
+
+
+Checked Exception--->In this kind of exception java telling us that we need to deal with the possibility of
+exception(here filenotfound) when this piece of code is called becoz filenotfoundexception is checked exception
+
+
+so CHECKED EXCEPTION-->Here java makes us deal with one way or another
+(either by try catch block or via throws clause in method signature) at compile time that means
+before our programs will even compile
+java checks to ensure that you are dealing with the possibility of that exception happening
+and it will not compile...
+
+How to deal with Checked Exception??
+1-either via try catch block
+2-throws clause in method signature(Yes i know that ,that particular piece of code can throw exception)
+But i am not going to deal with it  i just declare to you that i only throw and whatever piece of code
+that calls this method is going to deal with here readFile("myFile.txt");
+
+
+public static void readFile(String fileName)throws FileNotFoundException
+    {
+        FileReader reader=new FileReader(fileName);
+    }
+Still we can't compile as it is Checked Exception we have to deal with it.
+
+But now readFile("myFile.txt"); here error occur where we are calling (as he has to deal with it)
+Now two choice again
+Either surround it in try catch block or via throws keyword
+now throws to main as
+public class CheckedException  {
+    public static void main(String[] args) throws FileNotFoundException {
+        readFile("myFile.txt");
+     }
+     Now putting throws in main doesn't cause any error coz it is main method
+     Once it passes to main method it dies here immediately all we see is stacktrace output.
+
+
+
+
+ IN A NUTSHELL--->
+ iF WE HAVE A CODE WHICH CAN THROW A CHECKED EXCEPTION WE HAVE TO DEAL WITH IT EITHER VIA TRY CATCH BLOCK
+ OR VIA THROWS KEYWORD IN  METHOD SIGNATURE.
+
+
+
+
+
