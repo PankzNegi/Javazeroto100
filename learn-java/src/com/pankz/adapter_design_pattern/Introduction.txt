@@ -1,0 +1,8 @@
+Adapter Design Pattern is a structural design pattern that helps us to connect legacy or third party code
+that exposes similar functonality with a different interface.
+It is also known as wrapper as it wraps an existing code with a new interface making it compatible for client
+It is used so that two unrelated interfaces can work together.
+The object that joins these unrelated interface is called Adapter.
+Bridge gaps between two interfaces.
+Usage(i/o streams)
+USB to ethernet adapter
