@@ -1,0 +1,5 @@
+Cappuccino,100
+Latte,110
+Espresso,150
+Americano,120
+Flat White,130
