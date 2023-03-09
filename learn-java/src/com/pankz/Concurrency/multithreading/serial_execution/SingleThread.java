@@ -1,4 +1,4 @@
-package com.pankz.Concurrency.multithreading;
+package com.pankz.Concurrency.multithreading.serial_execution;
 
 public class SingleThread {
     public static void main(String[] args) throws InterruptedException {
