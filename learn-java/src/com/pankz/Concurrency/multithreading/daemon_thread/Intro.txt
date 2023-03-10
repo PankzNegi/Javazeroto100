@@ -1,0 +1,15 @@
+Daemon thread in Java is a low-priority thread that runs in the background to perform tasks such as garbage collection.
+Daemon thread in Java is also a service provider thread that provides services to the user thread. Its life depends on the mercy of user threads i.e. when all the user threads die, JVM terminates this thread automatically.
+
+In simple words, we can say that it provides services to user threads for background supporting tasks.
+ It has no role in life other than to serve user threads.
+
+Example of Daemon Thread in Java: Garbage collection in Java (gc), finalizer, etc.
+
+They can not prevent the JVM from exiting when all the user threads finish their execution.
+JVM terminates itself when all user threads finish their execution.
+If JVM finds a running daemon thread, it terminates the thread and, after that, shutdown it.
+JVM does not care whether the Daemon thread is running or not.
+It is an utmost low priority thread.
+Default Nature of Daemon Thread
+By default, the main thread is always non-daemon but for all the remaining threads, daemon nature will be inherited from parent to child. That is, if the parent is Daemon, the child is also a Daemon and if the parent is a non-daemon, then the child is also a non-daemon.
